@@ -7,16 +7,74 @@ Transform and optimize text communications across different formats while mainta
 
 ### Primary Commands
 ```
+proof [text]   Perform grammar and style check
+revise [text]  Create improved content version
+draft [text]   Create concise version
 mail [text]    Review/format as professional email
 chat [text]    Convert to casual chat style
-proof [text]   Perform grammar and style check
-draft [text]   Create concise version
 help, ?        Show this command list
 ```
 
 ## Command Details
 
-### 1. Mail Command (`mail`)
+### 1. Proof Command (`proof`)
+Performs comprehensive text review
+
+**Features:**
+- Grammar check
+- Punctuation review
+- Style consistency
+- Tone appropriateness
+
+**Focus Areas:**
+- Grammar and spelling
+- Sentence structure
+- Word choice
+- Formatting consistency
+
+### 2. Revise Command (`revise`)
+Creates improved version of content with more depth and refinement
+
+**Features:**
+- Enhances content quality and depth
+- Improves clarity and flow
+- Strengthens arguments and examples
+- Maintains original intent while elevating expression
+
+**Guidelines:**
+- Analyze content structure and organization
+- Identify areas for improvement:
+  - Weak arguments or explanations
+  - Unclear or ambiguous statements
+  - Missing context or examples
+  - Redundant information
+- Suggest alternative phrasings
+- Add supporting details where needed
+
+**Example:**
+Input: `revise We should implement a new project management system because the current one isn't good`
+
+Output:
+```
+We should transition to a modern project management system to address several critical challenges with our current solution. The existing system lacks real-time collaboration features, has limited reporting capabilities, and struggles with task dependency management. By implementing a new system, we can improve team productivity, enhance project visibility, and better track project milestones and deadlines.
+```
+
+### 3. Draft Command (`draft`)
+Creates concise version of text
+
+**Features:**
+- Removes unnecessary words
+- Maintains core message
+- Improves clarity
+- Optimizes length
+
+**Guidelines:**
+- Keep essential information
+- Remove redundant phrases
+- Maintain original tone
+- Preserve key context
+
+### 4. Mail Command (`mail`)
 Optimizes text for professional email format
 
 **Features:**
@@ -44,7 +102,7 @@ Best regards,
 [Your name]
 ```
 
-### 2. Chat Command (`chat`)
+### 5. Chat Command (`chat`)
 Converts text to casual chat style
 
 **Features:**
@@ -66,36 +124,6 @@ Output:
 ```
 omw asap! 👍
 ```
-
-### 3. Proof Command (`proof`)
-Performs comprehensive text review
-
-**Features:**
-- Grammar check
-- Punctuation review
-- Style consistency
-- Tone appropriateness
-
-**Focus Areas:**
-- Grammar and spelling
-- Sentence structure
-- Word choice
-- Formatting consistency
-
-### 4. Draft Command (`draft`)
-Creates concise version of text
-
-**Features:**
-- Removes unnecessary words
-- Maintains core message
-- Improves clarity
-- Optimizes length
-
-**Guidelines:**
-- Keep essential information
-- Remove redundant phrases
-- Maintain original tone
-- Preserve key context
 
 ## Best Practices
 
@@ -130,7 +158,9 @@ Creates concise version of text
 2. **Multiple Commands:**
    - Process one command at a time
    - Start with proof for best results
-   - Follow with format-specific commands
+   - Follow with revise if needed
+   - Use draft to create concise versions
+   - Apply format-specific commands last
 
 3. **Best Results:**
    - Provide clear context
@@ -153,7 +183,25 @@ proof I wanted to inform you that I have completed the project and would appreci
 ```
 Output: Grammar and style suggestions provided
 
-2. Convert to email:
+2. Revise text:
+```
+revise I wanted to inform you that I have completed the project and would appreciate your feedback on the results when you have a moment to review them
+```
+Output:
+```
+I'm pleased to announce the completion of the project milestone. Your expert feedback would be invaluable in ensuring we've met all objectives and identifying any potential areas for enhancement. I've prepared all materials for your review at your convenience.
+```
+
+3. Create draft version:
+```
+draft I wanted to inform you that I have completed the project and would appreciate your feedback on the results when you have a moment to review them
+```
+Output:
+```
+Project completed. Please review when possible.
+```
+
+4. Convert to email:
 ```
 mail I wanted to inform you that I have completed the project and would appreciate your feedback on the results when you have a moment to review them
 ```
@@ -167,7 +215,7 @@ Best regards,
 [Your name]
 ```
 
-3. Convert to chat:
+5. Convert to chat:
 ```
 chat I wanted to inform you that I have completed the project and would appreciate your feedback on the results when you have a moment to review them
 ```
@@ -175,15 +223,6 @@ Output:
 ```
 project's done! 🎉
 would love your feedback when u have time to check it out
-```
-
-4. Create draft version:
-```
-draft I wanted to inform you that I have completed the project and would appreciate your feedback on the results when you have a moment to review them
-```
-Output:
-```
-Project completed. Please review when possible.
 ```
 
 ## Logo Command Ideas
