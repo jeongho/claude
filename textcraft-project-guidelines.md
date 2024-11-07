@@ -103,27 +103,34 @@ Best regards,
 ```
 
 ### 5. Chat Command (`chat`)
-Converts text to casual chat style
+Converts text to workplace-appropriate chat style
 
-**Features:**
-- Uses appropriate chat abbreviations
-- Breaks into shorter messages
-- Adds relevant emojis where appropriate
-- Maintains casual tone
+**Professional Guidelines:**
+- Maintain appropriate formality for workplace
+- Preserve full names and important terms
+- Avoid greetings like "hey!" or excessive punctuation
+- No emojis for business queries
+- Keep abbreviations minimal and professional (e.g., "pls", "thx")
 
-**Style Guidelines:**
-- Prefer one-line messages
-- Use common chat acronyms (BTW, IMO, etc.)
-- Keep formatting minimal
-- Maintain message clarity
+**Examples:**
 
-**Example:**
-Input: `chat I will be there as soon as possible`
-
-Output:
+Status updates:
 ```
-omw asap! 👍
+Input: Could you please provide an update on the current status of the project?
+Output: could you update me on the project status?
+
+Input: One more thing, when you have a chance, please give me update on where Kyungha Min's process stands now.
+Output: when you have a moment, could you update me on Kyungha Min's progress?
+
+Input: I wanted to inform you that the meeting has been rescheduled to tomorrow at 2 PM.
+Output: meeting rescheduled to tmrw 2pm
 ```
+
+**Tone Guide:**
+- Semi-formal: Maintain professionalism while being concise
+- Clear: Preserve important details and names
+- Direct: Remove unnecessary formalities but keep courtesy
+- Simple: Reduce length without losing meaning
 
 ## Best Practices
 
@@ -221,8 +228,8 @@ chat I wanted to inform you that I have completed the project and would apprecia
 ```
 Output:
 ```
-project's done! 🎉
-would love your feedback when u have time to check it out
+project completed
+would appreciate your feedback when you have time
 ```
 
 ## Logo Command Ideas
